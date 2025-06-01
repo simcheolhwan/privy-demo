@@ -15,7 +15,9 @@ const Connection = () => {
 
   return (
     <>
-      <p>{wallet.address}</p>
+      <p>
+        {wallet.address} ({wallet.meta.name})
+      </p>
       <button
         onClick={async () => {
           const provider = await wallet.getEthereumProvider()
