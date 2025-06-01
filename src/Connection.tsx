@@ -1,9 +1,7 @@
 import { useConnectWallet, useWallets } from "@privy-io/react-auth"
-import { useDisconnect } from "wagmi"
 
 const Connection = () => {
   const { connectWallet } = useConnectWallet()
-  const { disconnect } = useDisconnect()
   const { ready, wallets } = useWallets()
   const wallet = wallets[0]
 
@@ -18,7 +16,17 @@ const Connection = () => {
   return (
     <>
       <p>{wallet.address}</p>
-      <button onClick={() => disconnect()}>Disconnect</button>
+      <button
+        onClick={async () => {
+          const provider = await wallet.getEthereumProvider()
+          await provider.request({
+            method: "wallet_revokePermissions",
+            params: [{ eth_accounts: {} }],
+          })
+        }}
+      >
+        Disconnect
+      </button>
     </>
   )
 }
