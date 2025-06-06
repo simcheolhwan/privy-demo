@@ -6,26 +6,26 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@privy-io/react-auth": "^2.13.2",
-    "@privy-io/wagmi": "^1",
-    "@tanstack/react-query": "^5.76.1",
+    "@privy-io/react-auth": "^2.13.8",
+    "@privy-io/wagmi": "^1.0.3",
+    "@tanstack/react-query": "^5.80.6",
     "bignumber.js": "^9.3.0",
-    "cosmjs-types": "^0",
-    "ethers": "^6",
-    "react": "^19",
-    "react-dom": "^19",
-    "react-hook-form": "^7.56.4",
-    "react-router": "^7",
-    "viem": "^2",
-    "wagmi": "^2"
+    "cosmjs-types": "^0.9.0",
+    "ethers": "^6.14.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.57.0",
+    "react-router": "^7.6.2",
+    "viem": "^2.30.6",
+    "wagmi": "^2.15.5"
   },
   "devDependencies": {
-    "@tsconfig/vite-react": "^3",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@vitejs/plugin-react-swc": "^3",
-    "eslint": "^9",
-    "typescript": "^5",
-    "vite": "^6"
+    "@tsconfig/vite-react": "^6.3.5",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react-swc": "^3.10.1",
+    "eslint": "^9.28.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
   }
 }
